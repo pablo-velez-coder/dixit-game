@@ -1,0 +1,40 @@
+.Score{
+    background-color: var(--main-color);
+    width:100%;
+    &Header{
+        display:flex;
+        justify-content:space-between;
+        padding:1rem;
+    }
+    &Line{
+        display:flex;
+        padding:0.5rem 1rem;
+        &Score{
+            background-color:rgba(255,255,255,0.23);
+            font-weight: bold;
+            >span{
+                font-size: 0.8rem;
+                font-weight: normal;
+            }
+        }
+        &Rabbit{
+        flex:1;
+        display:flex;
+
+        &Point{
+            width:100%;
+            position: relative;
+            &Current{
+                border-radius: 50%;
+                height:13px;
+                width:13px;
+                right:-10px;
+                z-index: 2;
+                bottom:10px;
+                transform: scaleX(-1);
+                position:absolute;
+            }
+        }
+        }
+    }
+}

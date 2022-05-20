@@ -1,0 +1,78 @@
+.RiddlePlay{
+    background-color:var(--main-color);
+    padding:1rem;
+    &Reset{
+        >button{
+            border-radius: 7px;
+            padding:0.2rem 1rem;
+            font-weight: bold;
+            background-color:green;
+            color:white;
+            cursor: pointer;
+            &:hover{
+                color:lightgray;
+            }
+        }
+    }
+    &Cards{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.2rem;
+        &Card{
+
+            height:120px;
+            width: 83px;
+            border-radius: 10px;
+            @media (min-width: 950px){
+                height:240px;
+                width: 180px;
+            }
+            >img{
+            width:100%;
+            height:100%;
+                object-fit: contain;
+                border-radius: 10px;
+
+            }
+        }
+    }
+    &Form{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding:2rem 0;
+    &Form{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+
+        max-width: 600px;
+        >textarea{
+            min-height: 100px;
+            border-radius: 8px;
+            resize: none;
+            outline-width: 0;
+            padding: 1rem;
+        }
+        >button{
+            margin-top: 1rem;
+            border-radius: 8px;
+            padding:0.3rem 1rem;
+        }
+    }
+    >p{
+        margin-bottom: 2rem;
+    }
+    }
+    &Header{
+        padding:1rem;
+        text-align:center;
+    }
+}
+
+.selected{
+    border: 2px solid red;
+}

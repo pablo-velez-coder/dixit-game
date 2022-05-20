@@ -1,0 +1,39 @@
+.GuessingPlay{
+    background-color:orange;
+
+    >p{
+        padding:1rem;
+    }
+    &Riddle{
+        text-align:center;
+        padding:2rem 1rem;
+    }
+    &Players{
+        display:flex;
+        padding:1rem;
+        justify-content: space-evenly;
+        gap: 0.4rem;
+        &Avatar{
+            background-color: red;
+            height:40px;
+            width:40px;
+            border-radius: 50%;
+            position:relative;
+        }
+    }
+    &Cards{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        >img{
+            height:140px;
+            width: 84px;
+            object-fit: contain;
+            border-radius: 10px;
+            @media (min-width: 950px){
+                height:340px;
+                width: 280px;
+            }
+        }
+    }
+}

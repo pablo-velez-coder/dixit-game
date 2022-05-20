@@ -1,0 +1,28 @@
+.gameBoard{
+    &ChatMobile{
+        position:fixed;
+        right:1rem;
+        bottom:1rem;
+        width: 100px;
+        height: 300px;
+        @media (min-width:768px){
+            display:none;
+        }
+    }
+    &Main{
+        display:flex;
+
+        height: calc(100vh - 4rem);
+        &Left{
+            flex:0.2;
+            height:100%;
+            @media (max-width:768px){
+                display:none;
+            }
+        }
+
+        &Right{
+            flex:1
+        }
+    }
+}

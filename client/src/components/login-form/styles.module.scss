@@ -1,0 +1,30 @@
+.login {
+    background-color: var(--main-color);
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    >section{
+        padding:1rem;
+    }
+    &Logo{
+        display:flex;
+        padding:1rem;
+        justify-content: center;
+        >img{
+            width:100%;
+            max-width: 500px;
+        }
+    }
+    &Main{
+        background-color: green;
+        flex:1;
+        display:flex;
+        padding-top: 10rem;
+        justify-content: center;
+
+    }
+
+    &Footer{
+        padding:1rem;
+    }
+}
